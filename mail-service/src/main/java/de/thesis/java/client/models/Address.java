@@ -1,4 +1,4 @@
-package com.sanchi.java.mailservice.models;
+package de.thesis.java.client.models;
 
 public class Address {
 

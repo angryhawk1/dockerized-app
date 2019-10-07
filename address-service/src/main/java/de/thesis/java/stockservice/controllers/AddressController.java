@@ -1,7 +1,7 @@
-package com.sanchi.java.addressservice.controllers;
+package de.thesis.java.stockservice.controllers;
 
-import com.sanchi.java.addressservice.models.Address;
-import com.sanchi.java.addressservice.services.AddressDataService;
+import de.thesis.java.stockservice.models.Address;
+import de.thesis.java.stockservice.services.AddressDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

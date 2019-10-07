@@ -1,10 +1,11 @@
-package com.sanchi.java.mailservice.service;
+package de.thesis.java.client.service;
 
-import com.sanchi.java.mailservice.models.Mail;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import de.thesis.java.client.models.Mail;
 import org.springframework.stereotype.Service;
 
 @Service

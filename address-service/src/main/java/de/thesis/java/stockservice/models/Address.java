@@ -1,4 +1,4 @@
-package com.sanchi.java.addressservice.models;
+package de.thesis.java.stockservice.models;
 
 public class Address {
 

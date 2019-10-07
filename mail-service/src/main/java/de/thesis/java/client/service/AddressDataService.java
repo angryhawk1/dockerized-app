@@ -1,6 +1,6 @@
-package com.sanchi.java.mailservice.service;
+package de.thesis.java.client.service;
 
-import com.sanchi.java.mailservice.models.Address;
+import de.thesis.java.client.models.Address;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;

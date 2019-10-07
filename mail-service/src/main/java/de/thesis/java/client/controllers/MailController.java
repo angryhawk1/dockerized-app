@@ -1,10 +1,11 @@
-package com.sanchi.java.mailservice.controllers;
+package de.thesis.java.client.controllers;
 
-import com.sanchi.java.mailservice.models.Address;
-import com.sanchi.java.mailservice.models.Mail;
-import com.sanchi.java.mailservice.service.AddressDataService;
-import com.sanchi.java.mailservice.service.MailDataService;
 import java.util.List;
+
+import de.thesis.java.client.models.Address;
+import de.thesis.java.client.models.Mail;
+import de.thesis.java.client.service.AddressDataService;
+import de.thesis.java.client.service.MailDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

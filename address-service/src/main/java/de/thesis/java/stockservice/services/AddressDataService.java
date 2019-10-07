@@ -1,9 +1,14 @@
-package com.sanchi.java.addressservice.services;
+package de.thesis.java.stockservice.services;
 
-import com.sanchi.java.addressservice.models.Address;
+import de.thesis.java.stockservice.models.Address;
+
 import java.util.HashMap;
 import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 public class AddressDataService {
