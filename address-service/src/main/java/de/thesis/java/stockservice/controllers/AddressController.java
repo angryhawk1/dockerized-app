@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+
 @RestController
 public class AddressController {
 
@@ -18,6 +20,13 @@ public class AddressController {
   public ResponseEntity<Address> getAddress(@PathVariable("member-id") int memberId) {
     Address address = dataService.getAddress(memberId);
     return ResponseEntity.ok(address);
+  }
+
+
+  @GetMapping("/stock")
+  public ResponseEntity<String> getStockData() throws IOException {
+    String stockData = dataService.getStock();
+    return ResponseEntity.ok(stockData);
   }
 
 }
