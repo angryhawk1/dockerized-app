@@ -2,7 +2,7 @@
 FROM openjdk:8-jdk-alpine
 
 # Add Maintainer Info
-LABEL maintainer="abd.razzak.shaikh@gmail.com"
+LABEL maintainer="sanchi.goyal.sg@gmail.com"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
@@ -11,10 +11,10 @@ VOLUME /tmp
 EXPOSE 8085
 
 # The application's jar file
-ARG JAR_FILE=target/spring-server-1.jar
+ARG JAR_FILE=./build/libs/address-service-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} spring-server-1.jar
+ADD ${JAR_FILE} address-service.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/spring-server-1.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/address-service.jar"]

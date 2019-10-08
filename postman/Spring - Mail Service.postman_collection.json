@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6a1bd69e-a03a-4c08-9571-f5cf2f421435",
+		"_postman_id": "2dfb647d-0bbe-4f19-8663-6d7d4bd11dff",
 		"name": "Spring - Mail Service",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -56,6 +56,80 @@
 						"mail-service",
 						"1",
 						"mails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stock from mail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/mail-service/1/mails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"mail-service",
+						"1",
+						"mails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8085/address-service/stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"address-service",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8085/address-service/1/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"address-service",
+						"1",
+						"address"
 					]
 				}
 			},
